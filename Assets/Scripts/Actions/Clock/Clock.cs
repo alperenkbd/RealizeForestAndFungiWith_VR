@@ -17,7 +17,7 @@ public class Clock : MonoBehaviour
         if (Seconds >= 0)
         {
             Seconds -= Time.deltaTime;
-            SecondsText.text = Seconds.ToString() + " sec";
+            SecondsText.text = Mathf.Round(Seconds).ToString() + " sec";
         }
         else
         {
